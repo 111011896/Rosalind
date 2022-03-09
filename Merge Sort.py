@@ -28,14 +28,13 @@ def merge(left, right):
     return sorted_list
 
 def merge_sort(unsorted_list):
-
     if len(unsorted_list) <= 1:
         return unsorted_list
 
     mid = len(unsorted_list) // 2
     left = unsorted_list[:mid]
     right = unsorted_list[mid:]
-
+    
     left1 = merge_sort(left)
     right1 = merge_sort(right)
     return merge(left1, right1)
