@@ -2,6 +2,7 @@ with open("새파일.txt") as f:
     text = f.read()
 
 blink = ""
+
 for i in range(len(text)):
     if text[i] == "A":
         blink += "T"
