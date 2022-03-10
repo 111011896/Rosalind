@@ -8,8 +8,6 @@ arr = []
 for i in lines[1]:
     arr.append(int(i))
 
-print(arr)
-
 pivot = arr[0]
 lesser_arr, equal_arr, greater_arr = [], [], []
 
